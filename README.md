@@ -24,26 +24,25 @@ The system orchestrates real-time market data processing with O(1) lookup perfor
 
 ```mermaid
 graph TB
-    Market[Kiwoom Securities API<br/>Market Data Feed] --> WebSocket[WebSocket Connection<br/>Real-time Price Updates]
-    WebSocket --> Engine[Data Collection Engine<br/>asyncio + websockets]
-    Engine --> Process[Data Processing<br/>Price/Rate Calculation]
-    Process --> HashMap[O(1) Data Map<br/>Dictionary/Hashmap]
-    HashMap --> Memory[Direct Memory Reference<br/>No HTTP Overhead]
-    Memory --> UI[PySide6 Qt UI<br/>100ms Polling]
-    UI --> Display[Real-time Display<br/>Portfolio/Risk Analysis]
-    
-    Excel[Excel File<br/>Portfolio Import] --> Engine
+    Market["Kiwoom Securities API<br/>Market Data Feed"] --> WebSocket["WebSocket Connection<br/>Real-time Price Feed"]
+    WebSocket --> Engine["Data Collection Engine<br/>asyncio + websockets"]
+    Engine --> Process["Data Processing<br/>Price/Rate Calculation"]
+    Process --> HashMap["O(1) Data Map<br/>Dictionary/Hashmap"]
+    HashMap --> Memory["Direct Memory Reference<br/>No HTTP Overhead"]
+    Memory --> UI["PySide6 Qt UI<br/>100ms Polling"]
+    UI --> Display["Real-time Display<br/>Portfolio/Risk Analysis"]
+
+    Excel["Excel File<br/>Portfolio Import"] --> Engine
     Engine --> Excel
-    
-    HashMap -.OTA Update.-> Market
-    
+
+    HashMap -. "OTA Update" .-> Market
+
     style Market fill:#4a90e2,stroke:#333,stroke-width:2px
     style WebSocket fill:#10b981,stroke:#333,stroke-width:2px
     style Engine fill:#f59e0b,stroke:#333,stroke-width:2px
     style HashMap fill:#ef4444,stroke:#333,stroke-width:2px
     style Memory fill:#8b5cf6,stroke:#333,stroke-width:2px
-    style UI fill:#ec4899,stroke:#333,stroke-width:2px
-```
+    style UI fill:#ec4899,stroke:#333,stroke-width:2px```
 
 ---
 
