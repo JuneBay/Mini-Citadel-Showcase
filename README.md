@@ -22,7 +22,6 @@
 
 The system orchestrates real-time market data processing with O(1) lookup performance and direct memory access for zero-latency UI updates.
 
-```mermaid
 graph TB
     Market["Kiwoom Securities API<br/>Market Data Feed"] --> WebSocket["WebSocket Connection<br/>Real-time Price Feed"]
     WebSocket --> Engine["Data Collection Engine<br/>asyncio + websockets"]
@@ -42,8 +41,7 @@ graph TB
     style Engine fill:#f59e0b,stroke:#333,stroke-width:2px
     style HashMap fill:#ef4444,stroke:#333,stroke-width:2px
     style Memory fill:#8b5cf6,stroke:#333,stroke-width:2px
-    style UI fill:#ec4899,stroke:#333,stroke-width:2px---
-
+    style UI fill:#ec4899,stroke:#333,stroke-width:2px
 ## 🎨 Core Design Principles
 
 ### 1. O(1) Lookup Performance
