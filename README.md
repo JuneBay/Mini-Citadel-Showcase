@@ -42,9 +42,7 @@ graph TB
     style Engine fill:#f59e0b,stroke:#333,stroke-width:2px
     style HashMap fill:#ef4444,stroke:#333,stroke-width:2px
     style Memory fill:#8b5cf6,stroke:#333,stroke-width:2px
-    style UI fill:#ec4899,stroke:#333,stroke-width:2px```
-
----
+    style UI fill:#ec4899,stroke:#333,stroke-width:2px---
 
 ## 🎨 Core Design Principles
 
