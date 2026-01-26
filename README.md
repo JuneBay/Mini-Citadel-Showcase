@@ -2,7 +2,7 @@
 
 **Senior Solution Architect | Real-time Financial Portfolio Management System**
 
-[![GitHub](https://img.shields.io/badge/GitHub-Source_Code-black?style=for-the-badge&logo=github)](https://github.com/JuneBay/Mini-Citadel)
+[![GitHub](https://img.shields.io/badge/GitHub-Showcase-black?style=for-the-badge&logo=github)](https://github.com/JuneBay/Mini-Citadel-Showcase)
 
 ---
 
@@ -224,7 +224,7 @@ Mini-Citadel/
 
 ## 🔗 Related Resources
 
-- **Source Code**: [Mini-Citadel Repository](https://github.com/JuneBay/Mini-Citadel)
+- **Showcase Repository**: [Mini-Citadel-Showcase](https://github.com/JuneBay/Mini-Citadel-Showcase)
 - **Technical Details**: See [`Finance_Optimization_Snippet.py`](./Finance_Optimization_Snippet.py) for implementation highlights
 
 ---
