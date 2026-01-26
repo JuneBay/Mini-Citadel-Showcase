@@ -22,6 +22,7 @@
 
 The system orchestrates real-time market data processing with O(1) lookup performance and direct memory access for zero-latency UI updates.
 
+```mermaid
 graph TB
     Market["Kiwoom Securities API<br/>Market Data Feed"] --> WebSocket["WebSocket Connection<br/>Real-time Price Feed"]
     WebSocket --> Engine["Data Collection Engine<br/>asyncio + websockets"]
@@ -42,6 +43,10 @@ graph TB
     style HashMap fill:#ef4444,stroke:#333,stroke-width:2px
     style Memory fill:#8b5cf6,stroke:#333,stroke-width:2px
     style UI fill:#ec4899,stroke:#333,stroke-width:2px
+```
+
+---
+
 ## 🎨 Core Design Principles
 
 ### 1. O(1) Lookup Performance
@@ -139,7 +144,7 @@ The system implements hashmap-based data structures enabling constant-time looku
 **Mini Citadel** has been actively developed and used for portfolio management:
 
 - **Development Period**: 2020 - Present (25+ years financial systems experience)
-- **Repository**: [Mini-Citadel](https://github.com/JuneBay/Mini-Citadel)
+- **Showcase Repository**: [Mini-Citadel-Showcase](https://github.com/JuneBay/Mini-Citadel-Showcase)
 - **Status**: Production-ready, actively maintained
 - **Use Case**: Real-time portfolio tracking, risk management, trading support
 
@@ -248,6 +253,6 @@ This showcase demonstrates:
 
 **Built with real-time performance in mind, not theoretical optimization.**
 
-*For architecture walkthroughs and deeper technical details, please contact: [jbjhun@gmail.com](mailto:jbjhun@gmail.com)*
+*For architecture walkthroughs and deeper technical details, please [contact via LinkedIn](https://linkedin.com/in/junebay)*
 
 </div>
